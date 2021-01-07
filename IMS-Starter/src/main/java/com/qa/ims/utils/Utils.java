@@ -48,5 +48,20 @@ public class Utils {
 		} while (doubleInput == null);
 		return doubleInput;
 	}
+	
+	
+	
+	public Boolean getBoolean() {
+		String input = getString();
+		Boolean BooleanInput = null;
+		do {
+			try {
+				BooleanInput = Boolean.parseBoolean(input);
+			} catch (NumberFormatException nfe) {
+				LOGGER.info("Error - Please enter a number");
+			}
+		} while (BooleanInput == null);
+		return BooleanInput;
+	}
 
 }
