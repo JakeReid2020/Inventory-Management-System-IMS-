@@ -4,10 +4,10 @@ public class Item {
 	
 	private Long id;
 	private String title;
-	private double price;
+	private Double price;
 	private Long quantity;
 
-	public Item(Long id, String title, double price, Long quantity) {
+	public Item(Long id, String title, Double price, Long quantity) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -16,12 +16,20 @@ public class Item {
 	}
 
 
-	public Item(String title, double price, Long quantity) {
+	public Item(String title, Double price, Long quantity) {
 		super();
 		this.id = 1L;
 		this.title = title;
 		this.price = price;
 		this.quantity = quantity;
+	}
+	
+	public Item(String title, Double price) {
+		super();
+		this.id = 1L;
+		this.title = title;
+		this.price = price;
+		this.quantity = 1L;
 	}
 	
 	public Long getId() {
@@ -44,7 +52,7 @@ public class Item {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 	

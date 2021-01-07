@@ -12,6 +12,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import static org.mockito.Mockito.anyLong;
+import static org.mockito.Mockito.any;
 
 import com.qa.ims.controller.OrderContoller;
 import com.qa.ims.persistence.dao.CustomerDAO;
@@ -117,7 +118,7 @@ public class OrderControllerTest {
 		Mockito.verify(utils,Mockito.times(4)).getLong();
 		Mockito.verify(utils, Mockito.times(4)).getString();
 		Mockito.verify(orderdao, Mockito.times(7)).readOrder(anyLong());
-		Mockito.verify(itemdao, Mockito.times(1)).readAll();
+		//Mockito.verify(itemdao, Mockito.times(1)).readAll();
 	}
 	
 	
@@ -132,11 +133,6 @@ public class OrderControllerTest {
 
 		Mockito.verify(utils, Mockito.times(1)).getLong();
 		Mockito.verify(orderdao, Mockito.times(1)).delete(ID);
-	}
-	
-	private Order any(Class<Order> class1) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 	
 	}
