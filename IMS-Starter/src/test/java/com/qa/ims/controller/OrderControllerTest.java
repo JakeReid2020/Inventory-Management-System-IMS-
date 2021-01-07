@@ -1,4 +1,4 @@
-package com.qa.ims.controllers;
+package com.qa.ims.controller;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,10 +12,10 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.qa.ims.controller.OrderController;
-import com.qa.ims.persistence.dao.OrderDAO;
+import com.qa.ims.controller.OrderContoller;
 import com.qa.ims.persistence.dao.CustomerDAO;
 import com.qa.ims.persistence.dao.ItemDAO;
+import com.qa.ims.persistence.dao.OrderDAO;
 import com.qa.ims.persistence.domain.Customer;
 import com.qa.ims.persistence.domain.Item;
 import com.qa.ims.persistence.domain.Order;
@@ -36,9 +36,9 @@ public class OrderControllerTest {
 	@Mock
 	private ItemDAO itemdao;
 	
+	
 	@InjectMocks
-
-	private OrderController orderController;
+	private OrderContoller orderController;
 	
 	@Test
 	public void testReadAll() {

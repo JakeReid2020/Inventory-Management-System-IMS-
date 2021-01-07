@@ -12,7 +12,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import com.qa.ims.controller.CustomerController;
 import com.qa.ims.controller.ItemContoller;
-import com.qa.ims.controller.OrderController;
+import com.qa.ims.controller.OrderContoller;
 
 import com.qa.ims.utils.Utils;
 
@@ -27,7 +27,7 @@ public class imsTest {
 	private ItemContoller items;
 	
 	@Mock
-	private OrderController orders;
+	private OrderContoller orders;
 	
 	@Mock
 	private Utils utils;
