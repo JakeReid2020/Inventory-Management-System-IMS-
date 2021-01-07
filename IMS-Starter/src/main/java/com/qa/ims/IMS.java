@@ -7,7 +7,7 @@ import com.qa.ims.controller.Action;
 import com.qa.ims.controller.CrudController;
 import com.qa.ims.controller.CustomerController;
 import com.qa.ims.controller.ItemContoller;
-import com.qa.ims.controller.OrderController;
+import com.qa.ims.controller.OrderContoller;
 import com.qa.ims.persistence.dao.CustomerDAO;
 import com.qa.ims.persistence.dao.ItemDAO;
 import com.qa.ims.persistence.dao.OrderDAO;
@@ -19,7 +19,7 @@ public class IMS {
 
 	public static final Logger LOGGER = LogManager.getLogger();
 
-	private final OrderController orders;
+	private final OrderContoller orders;
 	private final ItemContoller items;
 	private final CustomerController customers;
 	private final Utils utils;
@@ -30,7 +30,7 @@ public class IMS {
 		final ItemDAO itemDAO = new ItemDAO();
 		final CustomerDAO custDAO = new CustomerDAO();
 		
-		this.orders = new OrderController(orderDAO, utils, custDAO, itemDAO);
+		this.orders = new OrderContoller(orderDAO, utils, custDAO, itemDAO);
 		this.items = new ItemContoller(itemDAO, utils);
 		this.customers = new CustomerController(custDAO, utils);
 	}

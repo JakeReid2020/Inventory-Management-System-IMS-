@@ -17,6 +17,8 @@ import com.qa.ims.utils.DBUtils;
 public class ordersItemsDAO {
 	public static final Logger LOGGER = LogManager.getLogger();
 
+	ItemDAO itemDAO = new ItemDAO();
+	
 	public Order modelFromResultSet(ResultSet resultSet) throws SQLException {
 		Long id = resultSet.getLong("id");
 		Long customerid  = resultSet.getLong("customer_id");
@@ -24,8 +26,23 @@ public class ordersItemsDAO {
 		return new Order(id,customerid, itemid);
 	}
 	
+
+	public List<Item> readLines(Long id) {
+		try (Connection connection = DBUtils.getInstance().getConnection();
+				Statement statement = connection.createStatement();
+				ResultSet resultSet = statement.executeQuery("SELECT * FROM orders_items where fk_order_id = " + id);) {
+			List<Item> items = new ArrayList<Item>();
+			while (resultSet.next()) {
+				items.add(itemDAO.readItem(resultSet.getLong("fk_item_id")));
+			}
+			return items;
+		} catch (Exception e) {
+			LOGGER.debug(e);
+			LOGGER.error(e.getMessage());
+		}
+		return null;
+	}
 	
-	@Override
 	public List<Order> readAll() {
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				Statement statement = connection.createStatement();
@@ -56,12 +73,11 @@ public class ordersItemsDAO {
 		return null;
 	}
 	
-	@Override
 	public Order create(Order order) {
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				Statement statement = connection.createStatement();) {
 			statement.executeUpdate("INSERT INTO orders(customerid, itemid,orderid) values('" + order.getcustomerid()
-					+ "','" + order.getitemid() + "','" +order.getorderid() + "')");
+					+ "','" + order.getItems() + "','" +order.getId() + "')");
 			return readLatest();
 		} catch (Exception e) {
 			LOGGER.debug(e);
@@ -97,12 +113,11 @@ public class ordersItemsDAO {
 		return null;
 	}
 	
-	@Override
 	public Order update(Order order) {
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				Statement statement = connection.createStatement();) {
 			statement.executeUpdate("update orders set customerid ='" + order.getcustomerid() + "', itemid ='"
-					+ order.getitemid() + "' where id =" + order.getId());
+					+ order.getItems() + "' where id =" + order.getId());
 			return readOrder(order.getId());
 		} catch (Exception e) {
 			LOGGER.debug(e);
@@ -111,7 +126,6 @@ public class ordersItemsDAO {
 		return null;
 	}
 
-	@Override
 	public int delete(long id) {
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				Statement statement = connection.createStatement();) {

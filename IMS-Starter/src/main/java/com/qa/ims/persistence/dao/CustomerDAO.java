@@ -130,4 +130,10 @@ public class CustomerDAO implements Dao<Customer> {
 		return 0;
 	}
 
+	@Override
+	public int delete(long itemid, long id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

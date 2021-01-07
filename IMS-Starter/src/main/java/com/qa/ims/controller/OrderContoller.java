@@ -20,7 +20,7 @@ import com.qa.ims.utils.DBUtils;
 import com.qa.ims.utils.Utils;
 import com.qa.ims.persistence.dao.ItemDAO;
 
-public class OrderController implements CrudController<Order> {
+public class OrderContoller implements CrudController<Order> {
 
 	public static final Logger LOGGER = LogManager.getLogger();
 
@@ -29,7 +29,7 @@ public class OrderController implements CrudController<Order> {
 	private OrderDAO orderDAO;
 	private Utils utils;
 
-	public OrderController(OrderDAO orderDAO, Utils utils, CustomerDAO customerDAO, ItemDAO itemDAO) {
+	public OrderContoller(OrderDAO orderDAO, Utils utils, CustomerDAO customerDAO, ItemDAO itemDAO) {
 		super();
 		this.itemDAO = itemDAO;
 		this.customerDAO = customerDAO;

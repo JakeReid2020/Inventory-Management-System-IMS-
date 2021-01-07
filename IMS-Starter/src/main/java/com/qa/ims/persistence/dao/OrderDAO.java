@@ -173,12 +173,18 @@ public class OrderDAO implements Dao<Order> {
 	public int deleteLine(long ID, long itemID) {
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				Statement statement = connection.createStatement();) {
-			return statement.executeUpdate("delete from orders_items where fk_order_id = " + orderID
+			return statement.executeUpdate("delete from orders_items where fk_order_id = " + ID
 					+ " && fk_item_id = " + itemID + " LIMIT 1");
 		} catch (Exception e) {
 			LOGGER.debug(e);
 			LOGGER.error(e.getMessage());
 		}
+		return 0;
+	}
+
+	@Override
+	public int delete(long itemid, long id) {
+		// TODO Auto-generated method stub
 		return 0;
 	}
 }
