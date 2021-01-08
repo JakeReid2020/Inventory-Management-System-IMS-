@@ -41,7 +41,7 @@ public class imsTest {
 		.thenReturn("CUSTOMER","create","read","update","delete","return")
 		.thenReturn("ITEM","create","read","update","delete","return")
 		.thenReturn("ORDER","create","read","update","delete","return","stop");
-		Mockito.when(customers.create()).thenReturn(null);
+		
 		Mockito.when(customers.readAll()).thenReturn(null);
 		Mockito.when(customers.update()).thenReturn(null);
 		Mockito.when(customers.delete()).thenReturn(0);
@@ -50,8 +50,7 @@ public class imsTest {
 		Mockito.when(items.update()).thenReturn(null);
 		Mockito.when(items.delete()).thenReturn(0);
 		Mockito.when(orders.create()).thenReturn(null);
-		Mockito.when(orders.readAll()).thenReturn(null);
-		Mockito.when(orders.update()).thenReturn(null);
-		Mockito.when(orders.delete()).thenReturn(0);
+		
+		
 	}
 }

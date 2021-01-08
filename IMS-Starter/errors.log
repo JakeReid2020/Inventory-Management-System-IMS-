@@ -1,9 +1,210 @@
-20210108 09:26:14 INFO  [main] ims.IMS IMS.java39 - What is your username
-20210108 09:26:18 INFO  [main] ims.IMS IMS.java41 - What is your password
-20210108 09:26:20 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Column 'customer_id' specified twice
-20210108 09:26:20 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Unknown column 'quantity' in 'field list'
-20210108 09:26:20 INFO  [main] ims.IMS IMS.java47 - Which entity would you like to use?
-20210108 09:26:20 INFO  [main] domain.Domain Domain.java27 - CUSTOMER: Information about customers
-20210108 09:26:20 INFO  [main] domain.Domain Domain.java27 - ITEM: Individual Items
-20210108 09:26:20 INFO  [main] domain.Domain Domain.java27 - ORDER: Purchases of items
-20210108 09:26:20 INFO  [main] domain.Domain Domain.java27 - STOP: To close the application
+20210108 14:43:44 INFO  [main] controller.CustomerController CustomerController.java36 - id:1 first name:jordan surname:harrison
+20210108 14:43:44 INFO  [main] controller.CustomerController CustomerController.java46 - Please enter a first name
+20210108 14:43:44 INFO  [main] controller.CustomerController CustomerController.java48 - Please enter a surname
+20210108 14:43:44 INFO  [main] controller.CustomerController CustomerController.java51 - Customer created
+20210108 14:43:44 INFO  [main] controller.CustomerController CustomerController.java78 - Please enter the id of the customer you would like to delete
+20210108 14:43:44 INFO  [main] controller.CustomerController CustomerController.java60 - Please enter the id of the customer you would like to update
+20210108 14:43:44 INFO  [main] controller.CustomerController CustomerController.java62 - Please enter a first name
+20210108 14:43:44 INFO  [main] controller.CustomerController CustomerController.java64 - Please enter a surname
+20210108 14:43:44 INFO  [main] controller.CustomerController CustomerController.java67 - Customer Updated
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java35 - Please enter a item title
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java37 - Please item price
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java39 - Please item quantity
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java42 - Item created
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java67 - Please enter the id of the item you would like to delete
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java69 - 1Item Deleted
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java52 - Please enter the id of the item you would like to update
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java54 - Please enter a item title
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java56 - Please enter a price
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java58 - please enter the quantity of stock
+20210108 14:43:44 INFO  [main] controller.ItemContoller ItemContoller.java61 - Item Updated
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java60 - id:3 first name:Jake surname:Reid
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java62 - Please enter the customer id
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java69 - id:1 title:Gta price = £50.0,quantity=1
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java69 - id:1 title:Gta price = £50.0,quantity=1
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java69 - id:1 title:Gta price = £50.0,quantity=1
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java71 - Please enter the item id of the chosen product
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java74 - Would you like to add another?
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java69 - id:1 title:Gta price = £50.0,quantity=1
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java69 - id:1 title:Gta price = £50.0,quantity=1
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java69 - id:1 title:Gta price = £50.0,quantity=1
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java71 - Please enter the item id of the chosen product
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java74 - Would you like to add another?
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java135 - Please enter the id of the order you would like to delete.
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java137 - 1Order Deleted
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java88 - id:1 title:GTA price = £60.99,quantity=100
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java88 - id:1 title:GTA price = £60.99,quantity=100
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java88 - id:1 title:GTA price = £60.99,quantity=100
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java91 - Please enter the order of the item you would like to update
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java88 - id:1 title:GTA price = £60.99,quantity=100
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java88 - id:1 title:GTA price = £60.99,quantity=100
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java88 - id:1 title:GTA price = £60.99,quantity=100
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java91 - Please enter the order of the item you would like to update
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java98 - Order [id=2, customer_id=3, Items: 
+id:1 title:GTA price = £60.99,quantity=100 
+id:1 title:GTA price = £60.99,quantity=100 
+id:1 title:GTA price = £60.99,quantity=100 
+ Total Price: £182.97]
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java99 - Add or delete an item? exit to stop
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java104 - Enter item id to delete
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java98 - Order [id=2, customer_id=3, Items: 
+id:1 title:GTA price = £60.99,quantity=100 
+id:1 title:GTA price = £60.99,quantity=100 
+id:1 title:GTA price = £60.99,quantity=100 
+ Total Price: £182.97]
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java99 - Add or delete an item? exit to stop
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java111 - id:1 title:GTA price = £60.99,quantity=100
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java111 - id:1 title:GTA price = £60.99,quantity=100
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java111 - id:1 title:GTA price = £60.99,quantity=100
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java113 - Please enter the item id to add
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java98 - Order [id=2, customer_id=3, Items: 
+id:1 title:GTA price = £60.99,quantity=100 
+id:1 title:GTA price = £60.99,quantity=100 
+id:1 title:GTA price = £60.99,quantity=100 
+ Total Price: £182.97]
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java99 - Add or delete an item? exit to stop
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java121 - Invalid selection
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java98 - Order [id=2, customer_id=3, Items: 
+id:1 title:GTA price = £60.99,quantity=100 
+id:1 title:GTA price = £60.99,quantity=100 
+id:1 title:GTA price = £60.99,quantity=100 
+ Total Price: £182.97]
+20210108 14:43:44 INFO  [main] controller.OrderContoller OrderContoller.java99 - Add or delete an item? exit to stop
+20210108 14:43:46 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:46 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:46 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:46 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:46 DEBUG [main] dao.CustomerDAO CustomerDAO.java57 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:46 ERROR [main] dao.CustomerDAO CustomerDAO.java58 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:46 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:46 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:46 DEBUG [main] dao.CustomerDAO CustomerDAO.java89 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:46 ERROR [main] dao.CustomerDAO CustomerDAO.java90 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] dao.CustomerDAO CustomerDAO.java44 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 ERROR [main] dao.CustomerDAO CustomerDAO.java45 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] dao.CustomerDAO CustomerDAO.java76 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 ERROR [main] dao.CustomerDAO CustomerDAO.java77 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] dao.CustomerDAO CustomerDAO.java127 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 ERROR [main] dao.CustomerDAO CustomerDAO.java128 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] dao.CustomerDAO CustomerDAO.java110 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 ERROR [main] dao.CustomerDAO CustomerDAO.java111 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] dao.CustomerDAO CustomerDAO.java57 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 ERROR [main] dao.CustomerDAO CustomerDAO.java58 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] dao.CustomerDAO CustomerDAO.java89 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 ERROR [main] dao.CustomerDAO CustomerDAO.java90 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:47 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] dao.CustomerDAO CustomerDAO.java44 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 ERROR [main] dao.CustomerDAO CustomerDAO.java45 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] dao.CustomerDAO CustomerDAO.java76 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 ERROR [main] dao.CustomerDAO CustomerDAO.java77 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] dao.CustomerDAO CustomerDAO.java127 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 ERROR [main] dao.CustomerDAO CustomerDAO.java128 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] utils.DBUtils DBUtils.java60 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] dao.CustomerDAO CustomerDAO.java110 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 ERROR [main] dao.CustomerDAO CustomerDAO.java111 - Access denied for user 'root'@'localhost' (using password: YES)
+20210108 14:43:48 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Column 'customer_id' specified twice
+20210108 14:43:48 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Unknown column 'quantity' in 'field list'
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:49 DEBUG [main] dao.OrderDAO OrderDAO.java168 - java.sql.SQLSyntaxErrorException: Table 'ims.orders_items' doesn't exist
+20210108 14:43:49 ERROR [main] dao.OrderDAO OrderDAO.java169 - Table 'ims.orders_items' doesn't exist
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:49 DEBUG [main] dao.OrderDAO OrderDAO.java59 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:49 ERROR [main] dao.OrderDAO OrderDAO.java60 - Table 'ims.orders' doesn't exist
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:49 DEBUG [main] dao.OrderDAO OrderDAO.java100 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:49 ERROR [main] dao.OrderDAO OrderDAO.java101 - Table 'ims.orders' doesn't exist
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:49 DEBUG [main] dao.OrderDAO OrderDAO.java143 - java.sql.SQLSyntaxErrorException: Table 'ims.orders_items' doesn't exist
+20210108 14:43:49 ERROR [main] dao.OrderDAO OrderDAO.java144 - Table 'ims.orders_items' doesn't exist
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:49 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:49 DEBUG [main] dao.OrderDAO OrderDAO.java88 - java.sql.SQLSyntaxErrorException: Table 'ims.orders_items' doesn't exist
+20210108 14:43:49 ERROR [main] dao.OrderDAO OrderDAO.java89 - Table 'ims.orders_items' doesn't exist
+20210108 14:43:49 DEBUG [main] dao.ItemDAO ItemDAO.java87 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:49 ERROR [main] dao.ItemDAO ItemDAO.java88 - Table 'ims.items' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:50 DEBUG [main] dao.OrderDAO OrderDAO.java45 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 ERROR [main] dao.OrderDAO OrderDAO.java46 - Table 'ims.orders' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:50 DEBUG [main] dao.OrderDAO OrderDAO.java179 - java.sql.SQLSyntaxErrorException: Table 'ims.orders_items' doesn't exist
+20210108 14:43:50 ERROR [main] dao.OrderDAO OrderDAO.java180 - Table 'ims.orders_items' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:50 DEBUG [main] dao.OrderDAO OrderDAO.java74 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 ERROR [main] dao.OrderDAO OrderDAO.java75 - Table 'ims.orders' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:50 DEBUG [main] dao.OrderDAO OrderDAO.java74 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 ERROR [main] dao.OrderDAO OrderDAO.java75 - Table 'ims.orders' doesn't exist
+20210108 14:43:50 DEBUG [main] dao.OrderDAO OrderDAO.java156 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 ERROR [main] dao.OrderDAO OrderDAO.java157 - Table 'ims.orders' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:50 DEBUG [main] dao.OrderDAO OrderDAO.java127 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:50 ERROR [main] dao.OrderDAO OrderDAO.java128 - Table 'ims.orders' doesn't exist
+20210108 14:43:51 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Column 'customer_id' specified twice
+20210108 14:43:51 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Unknown column 'quantity' in 'field list'
+20210108 14:43:51 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:51 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:51 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:51 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:51 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:51 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:52 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:52 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:52 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:52 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:52 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:52 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:52 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Column 'customer_id' specified twice
+20210108 14:43:52 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Unknown column 'quantity' in 'field list'
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] dao.ItemDAO ItemDAO.java54 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 ERROR [main] dao.ItemDAO ItemDAO.java55 - Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] dao.ItemDAO ItemDAO.java87 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 ERROR [main] dao.ItemDAO ItemDAO.java88 - Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] dao.ItemDAO ItemDAO.java41 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 ERROR [main] dao.ItemDAO ItemDAO.java42 - Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] dao.ItemDAO ItemDAO.java68 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 ERROR [main] dao.ItemDAO ItemDAO.java69 - Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] dao.ItemDAO ItemDAO.java115 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 ERROR [main] dao.ItemDAO ItemDAO.java116 - Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.orders' doesn't exist
+20210108 14:43:53 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 DEBUG [main] dao.ItemDAO ItemDAO.java101 - java.sql.SQLSyntaxErrorException: Table 'ims.items' doesn't exist
+20210108 14:43:53 ERROR [main] dao.ItemDAO ItemDAO.java102 - Table 'ims.items' doesn't exist
