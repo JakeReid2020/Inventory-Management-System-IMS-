@@ -1,0 +1,9 @@
+20210108 09:26:14 INFO  [main] ims.IMS IMS.java39 - What is your username
+20210108 09:26:18 INFO  [main] ims.IMS IMS.java41 - What is your password
+20210108 09:26:20 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Column 'customer_id' specified twice
+20210108 09:26:20 DEBUG [main] utils.DBUtils DBUtils.java55 - java.sql.SQLSyntaxErrorException: Unknown column 'quantity' in 'field list'
+20210108 09:26:20 INFO  [main] ims.IMS IMS.java47 - Which entity would you like to use?
+20210108 09:26:20 INFO  [main] domain.Domain Domain.java27 - CUSTOMER: Information about customers
+20210108 09:26:20 INFO  [main] domain.Domain Domain.java27 - ITEM: Individual Items
+20210108 09:26:20 INFO  [main] domain.Domain Domain.java27 - ORDER: Purchases of items
+20210108 09:26:20 INFO  [main] domain.Domain Domain.java27 - STOP: To close the application

@@ -95,7 +95,7 @@ public class OrderDAOTest {
 		items.add(GTA);
 		items.add(GTA);
 		items.add(GTA);
-		final Order expected = new Order(2l,1l,items);
+		final Order expected = new Order(1l,1l,items);
 		for(Item item: expected.getItems()) {
 			item.setQuantity(1l);
 		}
