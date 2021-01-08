@@ -8,8 +8,8 @@ How to use application:
 
 1.Run the appplication using the runner class.
 
-2.enter username and password to access database.
+2.Enter username and password to access database.
 
-3.enter option you would like to edit by typing option or exit by typing stop.
+3.Enter option you would like to edit by typing option or exit by typing stop.
 
-4.after selecting option choose what you would like to do with selected option by typing the action you would like to do, or go back to orginal menu by typing return.
+4.After selecting option choose what you would like to do with selected option by typing the action you would like to do, or go back to orginal menu by typing return.
